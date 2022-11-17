@@ -1,6 +1,6 @@
 import throttle from 'lodash.throttle';
 
-refs = {
+const refs = {
     form: document.querySelector('.feedback-form'),
     email: document.querySelector('[name="email"'),
     message: document.querySelector('[name="message"]'),
