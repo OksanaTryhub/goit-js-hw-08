@@ -5,7 +5,10 @@ const refs = {
     email: document.querySelector('[name="email"'),
     message: document.querySelector('[name="message"]'),
 }
-const formData = {};
+let formData = {
+    email: '',
+    message: '',
+};
 
 refs.form.addEventListener('submit', onFormSubmit);
 refs.form.addEventListener('input', throttle(onFormInput, 500));
